@@ -1,0 +1,12 @@
+build:
+  - ./ci.sh build
+run:
+  - ./ci.sh stop start
+check:
+  - ./ci.sh pid
+cpu:
+  - ./ci.sh cpu
+ram:
+  - ./ci.sh ram
+disk:
+  - ./ci.sh disk
