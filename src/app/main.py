@@ -18,8 +18,9 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"project-name": "a3-iot"}
 
 
 if __name__ == "__main__":
+    
     uvicorn.run("app.main:app", host=host, port=port, workers=10)
